@@ -29,10 +29,19 @@ Assignment 3 program
 The UI completly freezes cause there is only one thread running both the ui and the ball method. This means that the ball program runs forever and not ever coming back to the ui.
 The way to fix this is by making the ball class a thread and launching it. Now the program has a thread for the ui and a thread for handling the ball making the program work.
 
-
+---------
+ATTENTION, the solutions for the following assignments can be found in the other program folder: startCodeForThreadExercises-master!!
+---------
 
 Assignment 4 program
 
 was told not to make this!
 
 Assignment 5 program
+
+I do not get the right results since the different threads all use the same method wich is not atomic. By making this method atomic we ensure that the program comes up with the right number. I put synchronized on the incr method in the turnstilecounter therby making it atomic.
+
+Assignment 6 program
+
+problem is in BankAccountUnsynchronized,java   the methods for transaction is being used by multiple threads messing things up just as the previous assignments. Both methods of making operations atomic has been used, using lock and synchronized.
+
